@@ -2,17 +2,33 @@
 package analistaed_73568326c.java;
 
 import java.util.*;
-
+/**
+ * Ejercicio práctico examen evaluación 1 ED
+ * @author Isabel Gómez dni 73568326C
+ * @version 1.0
+ */
 
 public class AnalistaED_73568326C {
 
     static final double FACTOR_HORA_EXTRA = 1.2;
     private String nombreCompleto, dni;
     private double salarioBasePorHora = 10.56;
+    /**
+         * Constructo con tres parametros
+         * @param nombrecompleto nombre completo en mayuculas
+         * @param dni documento nacional de identidad con letra en mayusculas
+         */
 
     public AnalistaED_73568326C(String nombreCompleto, String dni) {
         this.nombreCompleto = nombreCompleto;
         this.dni = dni;
+        /**
+         *Calcula el salario bruto mensual en función del salario base por hora ylas horas extras. 
+         * El precio por hora de la hora extra se determina con laconstante FACTOR_HORA_EXTRA
+         * @param horasExtra número de horas extra dedicadas redondeado a la baja (entero)
+         * @return devuelve el salario bruto mensual en euros con dos decimales
+         */
+        
     }
 
     public double getSalarioEsteMes(int horasExtra) {
